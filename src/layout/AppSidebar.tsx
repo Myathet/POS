@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useSidebar } from "../context/SidebarContext";
 import { MdDashboard } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaUserFriends } from "react-icons/fa";
 
 type NavItem = {
   name: string;
@@ -20,6 +20,11 @@ const navItems: NavItem[] = [
     icon: <MdDashboard />,
     name: "Dashboard",
     path: "/",
+  },
+  {
+    icon: <FaUserFriends />,
+    name: "Customers",
+    path: "/customer",
   },
   // {
   //   name: "Pages",
