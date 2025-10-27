@@ -45,6 +45,14 @@ const othersItems: NavItem[] = [
   //     { name: "Bar Chart", path: "/bar-chart", pro: false },
   //   ],
   // },
+  {
+    icon: <FaUserFriends />,
+    name: "Authentication",
+    subItems: [
+      { name: "Sign In", path: "/signin", pro: false },
+      { name: "Sign Up", path: "/signup", pro: false },
+    ],
+  },
 ];
 
 const AppSidebar: React.FC = () => {
